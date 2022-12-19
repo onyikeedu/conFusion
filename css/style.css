@@ -7,11 +7,11 @@
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
-    min height: 400px;
+    min-height: 400px;
 }
 
 .footer {
-    background-color: rgb(220, 220, 179);
+    background-color: rgb(184, 221, 165);
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -19,7 +19,7 @@
 .jumbotron {
     padding: 70px 30px;
     margin: 0px auto;
-    background: rgb(215, 160, 160);
+    background: rgb(18, 92, 26);
     color: #fff
 }
 
@@ -27,4 +27,13 @@
     font-size: 80%;
     margin: 0px;
     color:black;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: grey;
 }
