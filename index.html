@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg">Contact</span></a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -83,7 +83,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header bg-warning text-white">
+                <div class="modal-header text-white">
                     <h4 class="modal-title">Reserve a table</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -186,7 +186,7 @@
                         data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                         data-placement="bottom" href="#reserveform">Reserve Table</a>-->
                         <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="modal" data-target="#rsvModal">Reserve Table</a>
+                        id="rsvButton">Reserve Table</a>
                     </div>
             </div>
         </div>
@@ -429,6 +429,17 @@
                 
             });
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#loginButton").click(function() {
+                $("#loginModal").modal('show');
+            })
+            $("#rsvButton").click(function () {
+                $("#rsvModal").modal('show');
+            })
+
+        })
     </script>
 
 </body>
